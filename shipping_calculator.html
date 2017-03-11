@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <title>Shipping Calculator!</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Find out how much it is to ship your things.</h1>
+
+        <form action="shipping_price.php" method="get">
+            <div class="form-group">
+                <label for="weight_number">Enter the weight of your item</label>
+                <input id="weight_number" name="weight_number" class="form-control" type="number">
+            </div>
+            <div class="form-group">
+                <label for="distance_number">Enter how far you are shipping your item (in miles).</label>
+                <input id="distance_number" name="distance_number" class="form-control" type="number">
+            </div>
+            <button type="submit" class="btn">Go!</button>
+        </form>
+
+    </div>
+</body>
+</html>
