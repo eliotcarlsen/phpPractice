@@ -5,28 +5,30 @@
     <title>Purchase Order Form</title>
   </head>
   <body>
-    <form>
-    <div class="form-group">
-      <label for="name">Enter your full name:</label>
-      <input class="form-control" type="text" name="name" value="name">
+    <form action="purchase.php">
+      <div class="container">
+        <div class="form-group">
+          <label for="name">Enter your full name:</label>
+          <input id="name" type="text" name="name" value="name">
+        </div>
+        <div class="form-group">
+          <label for="street">Enter your street address:</label>
+          <input id="street" type="text" name="street" value="street">
+        </div>
+        <div class="form-group">
+          <label for="city">Enter your city:</label>
+          <input id="city" type="text" name="city" value="city">
+        </div>
+        <div class="form-group">
+          <label for="state">Enter your state:</label>
+          <input id="state" type="text" name="state" value="state">
+        </div>
+        <div class="form-group">
+          <label for="zip">Enter your zip:</label>
+          <input id="zip" type="number" name="zip" value="zip">
+        </div>
+        <button type="submit" name="btn">Submit</button>
+        </form>
     </div>
-    <div class="form-group">
-      <label for="home address">Enter your street address:</label>
-      <input class="form-control" type="text" name="street" value="street">
-    </div>
-    <div class="form-group">
-      <label for="city">Enter your city:</label>
-      <input class="form-control" type="text" name="city" value="city">
-    </div>
-    <div class="form-group">
-      <label for="state">Enter your state:</label>
-      <input class="form-control" type="text" name="state" value="state">
-    </div>
-    <div class="form-group">
-      <label for="zip">Enter your zip:</label>
-      <input class="form-control" type="number" name="zip" value="zip">
-    </div>
-    <button type="submit" name="btn">Submit</button>
-    </form>
   </body>
 </html>
