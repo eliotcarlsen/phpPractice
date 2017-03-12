@@ -19,8 +19,11 @@
   </head>
   <body>
     <?php echo $upper_sentence1; ?>
+    <br>
     <?php echo $word_number; ?>
+    <br>
     <?php echo $shuffle_string; ?>
+    <br>
     <?php echo $letter_finder; ?>
   </body>
 </html>

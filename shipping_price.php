@@ -1,9 +1,20 @@
 <?php
     $weight_number = $_GET["weight_number"];
     $distance_number = $_GET["distance_number"];
-    $weight_solution = $weight_number / 20;
-    $distance_solution = $distance_number / 20;
-    $solution = $distance_solution + $weight_solution;
+
+    $solution = calculateShipping($weight_number, $distance_number);
+
+    function calculateShipping($weight, $distance)
+    {
+        $price = ($distance/$weight) + 5;
+        return $price;
+    }
+
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
